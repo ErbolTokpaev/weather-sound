@@ -13,9 +13,9 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 1rem auto;
     background: url('./assets/summer-bg.jpg') no-repeat;
-    background-size: cover;
+    backdrop-filter: blur(5px);
+    height: 100%;
 }
 
 h1 {
