@@ -18,6 +18,10 @@ body {
     height: 100%;
 }
 
+#app {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     margin-bottom: 1rem;
@@ -47,4 +51,7 @@ h1 {
             width: 42px;
         }
     }
+}
+input {
+    margin-top: 30px;
 }
