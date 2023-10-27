@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PostcssPresetEnv = require('postcss-preset-env');
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -34,9 +35,7 @@ module.exports = {
         },
       ],
     }),
-    new MiniCssExtractPlugin({
-
-    }),
+    new MiniCssExtractPlugin(),
   ],
   module: {
     rules: [
@@ -53,7 +52,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [require('postcss-preset-env')],
+                plugins: [PostcssPresetEnv],
               },
             },
           },
