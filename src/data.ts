@@ -1,4 +1,11 @@
-const data = [
+interface Season {
+  id: number,
+  icon: string,
+  bg: string,
+  sound: string,
+}
+
+const data: Season[] = [
   {
     id: 1, icon: 'sun', bg: 'summer', sound: 'summer',
   },
@@ -9,13 +16,7 @@ const data = [
     id: 3, icon: 'cloud-snow', bg: 'winter', sound: 'winter',
   },
 ];
-const seasonIcons = {
-  summer: 'sun',
-  rain: 'cloud-rain',
-  winter: 'cloud-snow',
-};
 
 export {
   data,
-  seasonIcons,
 };
