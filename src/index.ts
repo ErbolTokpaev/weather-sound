@@ -1,5 +1,5 @@
 import './index.scss';
-import { data } from './data';
+import data from './data';
 
 let VOL = -1;
 let isPaused = false;
@@ -28,11 +28,10 @@ function changeIcon(sound: string, icon: string) {
   season.append(img);
 }
 
-
 function createAudioEl(sound: string) {
   const audio = document.createElement('audio');
   const source = document.createElement('source');
-  audio.setAttribute('loop', "true");
+  audio.setAttribute('loop', 'true');
   audio.id = 'audio';
   audio.setAttribute('name', sound);
   source.setAttribute('src', `./assets/sounds/${sound}.mp3`);

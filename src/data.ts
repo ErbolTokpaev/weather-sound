@@ -4,7 +4,6 @@ interface Season {
   bg: string,
   sound: string,
 }
-
 const data: Season[] = [
   {
     id: 1, icon: 'sun', bg: 'summer', sound: 'summer',
@@ -17,6 +16,4 @@ const data: Season[] = [
   },
 ];
 
-export {
-  data,
-};
+export default data;
